@@ -24,6 +24,18 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 gem 'angular-rails-templates'
 
+gem 'responders', '~> 2.0'
+
+gem 'sprockets-rails', '>=2.1.4'
+
+gem 'bootstrap-sass', '~> 3.3.7'
+
+gem 'angularjs-rails', '~> 1.2.25'
+
+gem 'angular_rails_csrf'
+
+gem 'devise', '~> 3.4.0'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
