@@ -10,7 +10,6 @@ function($scope, posts, post){
     posts.addComment(post.id, {
       body: $scope.body,
       author: 'user',
-      upvotes: 0
     }).then(function(response) {
       $scope.post.comments.push(response.data);
     });
