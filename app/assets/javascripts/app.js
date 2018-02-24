@@ -2,13 +2,12 @@ angular.module('flapperNews', ['ui.router', 'templates'])
 .config([
 '$stateProvider',
 '$urlRouterProvider',
-'$locationProvider',
-function($stateProvider, $urlRouterProvider, $locationProvider) {
+function($stateProvider, $urlRouterProvider) {
 
   $stateProvider
     .state('home', {
       url: '/home',
-      templateUrl: '/home.html',
+      templateUrl: 'home/_home.html',
       controller: 'MainCtrl'
     })
     .state('posts', {
@@ -17,4 +16,5 @@ function($stateProvider, $urlRouterProvider, $locationProvider) {
       controller: 'PostsCtrl'
     });
 
+  $urlRouterProvider.otherwise('home');
 }])
